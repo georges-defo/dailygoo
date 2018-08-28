@@ -1,8 +1,7 @@
 {
   "TITRE_RESEAUX_SOCIAUX": "Inscrivez-vous directement grâce à vos réseaux",
-  "MENU" : {
-    "PORTUGUESE" : "in Portuguese",
-    "ENGLISH" : "in English",
-    "FRENCH" : "in French"
-  }
+  "CONNEXION" : "Connexion",
+  "INSCRIPTION" : "Inscription",
+  "CONNEXION_FACEBOOK" : "Connexion avec Facebook",
+  "CONNEXION_GOOGLE" : "Connexion avec Google"
 }

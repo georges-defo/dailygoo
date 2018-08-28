@@ -9,32 +9,26 @@
 
 <ion-content padding text-center>
   <ion-grid>
-    <ion-row>
-      <div class="home_page_logo">
-        <img src="/assets/imgs/logo.png"/>
-      </div>
+    <ion-row class="logo">
+        <img src="assets/imgs/logo.png"/>
     </ion-row>
 
-    <ion-row>
-      <ion-list>
-        <ion-item>
-          <button ion-button >Connexion</button>
-        </ion-item>
-        <ion-item>
-          <button ion-button >Inscription</button>
-        </ion-item>
-      </ion-list>
-    </ion-row>
-    <h2> {{ 'TITRE_RESEAUX_SOCIAUX' | translate }} </h2>
-    <ion-row>
-      <ion-list>
-        <ion-item>
-          <button ion-button >Connexion avec Facebook</button>
-        </ion-item>
-        <ion-item>
-          <button ion-button >Connexion avec Google</button>
-        </ion-item>
-      </ion-list>
+    <ion-row class="home_form_buttons">
+      <ion-col class="default_login">
+        <button (click)="navigateToLogin()" ion-button round>{{ 'CONNEXION' | translate }}</button>
+      </ion-col>
+      <ion-col class="default_login">
+        <button (click)="navigateToRegister()" ion-button round>{{ 'INSCRIPTION' | translate }}</button>
+      </ion-col>
+      <p> {{ 'TITRE_RESEAUX_SOCIAUX' | translate }} </p>
+      <ion-col id="fcbk_login">
+        <button ion-button round><ion-icon name="dailygoo-fcbk"></ion-icon>
+          <p>{{ 'CONNEXION_FACEBOOK' | translate }}</p></button>
+      </ion-col>
+      <ion-col id="google_login">
+        <button ion-button round><ion-icon name="dailygoo-google"></ion-icon>
+          <p>{{ 'CONNEXION_GOOGLE' | translate }}</p></button>
+      </ion-col>
     </ion-row>
 
   </ion-grid>

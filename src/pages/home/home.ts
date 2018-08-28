@@ -11,4 +11,12 @@ export class HomePage {
 
   }
 
+  navigateToLogin() {
+    console.log('Navigating to login');
+    this.navCtrl.push('LoginPage');
+  }
+  navigateToRegister() {
+    console.log('navigating to register');
+  }
+
 }

@@ -23,13 +23,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #12836d;
+  background: #D3959B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #BFE6BA, #D3959B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #BFE6BA, #D3959B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  //background-image: url('../assets/imgs/splash.png');
+  //background-size: cover;
+  //background: #12836d;
 }
 
 .spinner {
   margin: 100px auto;
-  width: 50px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   font-size: 10px;
 }
@@ -79,4 +86,21 @@
      }
 }
 
+ion-icon {
+  &[class*="dailygoo-"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
+  }
+
+  &[class*="dailygoo-fcbk"] {
+    mask-image: url(../assets/icon/fcbk_icon.svg);
+  }
+  &[class*="dailygoo-google"] {
+    mask-image: url(../assets/icon/google_icon.svg);
+  }
+}
 
